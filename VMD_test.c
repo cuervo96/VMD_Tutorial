@@ -11,7 +11,7 @@ int PBC_pos(double *X, double L,int N);
 
 int main()
 {
-int L = 10, i, j, n = 6, N = n*n*n, N_pasos = 10000, N_frames = 1000, N_skip = (int) N_pasos / N_frames;  
+int L = 10, i, j, n = 6, N = n*n*n, N_pasos = 5000, N_frames = 500, N_skip = (int) N_pasos / N_frames;  
 double *x, *v;
 x = (double*) malloc(3 * N * sizeof(double));
 v = (double*) malloc(3 * N * sizeof(double));
@@ -71,11 +71,4 @@ for(int i = 0; i < 3 * N; i++)
 	}
 return 0;
 }
-
-
-
-
-
-
-
 #include "visualizacion.c"
