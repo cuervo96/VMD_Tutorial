@@ -1,0 +1,16 @@
+Instrucciones de uso para VMD_test.c y usar VMD 
+
+-Dejarlo en la misma carpeta que los archivos visualizacion.c y visualizacion.h.
+-Compilar solamente VMD_test.c 
+-Ejecutar.
+-Les va a aparecer un archivo .lammpstrj. Este es el archivo que vamos a abrir con VMD.
+-Abrir VMD escribiendo vmd desde la terminal. Es mejor si esto lo hacen con la carpeta
+donde tienen estos archivos abierta en la terminal. Sino una vez que se abra VMD van a tener
+que navegar para encontrar los archivos. 
+-Una vez que tienen abierto VMD van a File/New Molecule y abren el archivo .lammpstrj y clickean en load.
+-Para que se vean bien las moleculas ahora van a Graphics/Representations y en Drawing methods seleccionan
+VDW. Si no les gusta el color de las moleculas donde dice "Coloring Method" seleccionan "Color ID" y les 
+deja elegir el color. Donde dice "sphere scale" pongan entre 0.2 y 0.3, eso modifica el tamaño de las moleculas.
+-Si quieren que además de las moleculas VMD les muestre los bordes de la "Caja" donde están las moleculas tienen
+que ir a "Extensions/TK console" y se les abre una especie de terminal. Usan el comando "pbc box" y les muestra
+la caja. Esto está bueno para asegurarse de que ninguna partícula se escapa de la caja.
